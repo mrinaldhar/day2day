@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+
+<script type="text/javascript" src="js/json.js"></script>
+<script>
+$(document).ready(function() {
+	var mycars = new Array();
+mycars[0] = "Saab";
+mycars[1] = "Volvo";
+mycars[2] = "BMW";
+
+localStorage["mycars"] = JSON.stringify(mycars);
+
+var cars = JSON.parse(localStorage["mycars"]);
+$("#newtab").html(cars);
+});
+</script>
+</head>
+<body>
+<div id="newtab"></div>
+
+</body>
+</html>
+
+<!--
+	var array = [2, 5, 9];
+var index = array.indexOf(5);
+Then remove it with splice:
+
+if (index > -1) {
+    array.splice(index, 1);
+}
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi")
+
+for (var i=0;i<cars.length;i++)
+{ 
+document.write(cars[i] + "<br>");
+}
+-->

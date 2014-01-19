@@ -1,0 +1,46 @@
+<html>
+    <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        
+        
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+        
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        
+        <title>touchSwipe</title>
+        <script id='code_1'>
+				$(function() {			
+					$("#test").swipe( {
+					  swipe:function(event, direction, distance, duration, fingerCount) {
+						$("#test").text("You swiped " + direction + " with " + fingerCount + " fingers");
+					  },
+					  threshold:0,
+					  fingers:'all'
+					});
+				});
+			</script>
+    </head>
+    <body>
+		
+		<div class="container">
+			
+			
+			
+			
+			<span class='title'></span>
+			<h4>properties: <code>fingers</code></h4>
+			<p>By setting the number of <code>fingers</code> to 'all', any number of fingers will trigger the swipe.</p>
+			
+			<button class='btn btn-small btn-info example_btn'>Jump to Example</button>
+			<pre class="prettyprint" data-src='code_1'></pre>
+			<span class='navigation'></span>
+			
+			<div id="test" class="box">Swipe me with different combinations of fingers</div>
+			
+			<span class='navigation'></span>
+
+		</div>
+   </body>
+</html>

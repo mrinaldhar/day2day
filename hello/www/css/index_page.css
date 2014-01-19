@@ -1,0 +1,386 @@
+@font-face
+	{
+	font-family : myriad;
+	src: url(../font/myriadpro.otf);
+	}
+body {
+	font-family:myriad;
+  background-color:black;
+	padding-bottom:40px;
+  font-weight: 100;
+}
+#header {
+	font-family: myriad;
+	color:black;
+  font-size: 6.5em;
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.45);
+	text-align: center;
+  background-color: rgb(239,205,155);
+  top:0px;
+  left:0px;
+  right:0px;
+  padding-top:55px;
+  padding-bottom: 55px;
+  margin-top:0px;
+  opacity:0.8;
+  z-index:100;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+    max-height: 200px;
+}
+
+#currenttime {
+  color:white;
+  margin-right:50px;
+  font-size:2.5em;
+  display:inline-block;
+}
+#currentdate {
+  color:white;
+  margin-left:50px;
+  font-size:2.5em;
+  display:inline-block;
+}
+#page1 {
+  border-radius:200px;
+  top:0px;
+  bottom:0px;
+   margin-top:0px;
+   background-color: #8a8a8a;
+   height:100%;
+  max-height:100%;
+  font-family: myriad;
+  width:100%;
+  max-width:100%;
+  margin-bottom:0px;
+  position:absolute;
+  left:0px;
+  right:0px;
+  height:100%;}
+.container {
+  text-align: center;
+}
+#weather {
+  width:100%;
+  text-align: center;
+  background-color:black;
+  opacity:0.7;
+  max-height:400px;
+  padding-bottom:80px;
+  padding-top:80px;
+  margin-top:-10px;
+  font-family: myriad;
+  z-index:5;
+  display:none;
+}
+#news {
+ width:100%;
+  text-align: center;
+  background-color:skyblue;
+  opacity:0.5;
+  font-family: myriad;
+color:black;
+z-index:4;
+padding-top:70px;
+padding-bottom: 70px;
+display:none;
+
+}
+#news h2 {
+  color:black;
+}
+#loadscr {
+ width:100%;
+  text-align: center;
+  background-color:transparent;
+  opacity:0.7;
+color:white;
+font-family: myriad;
+z-index:4;
+padding-top:70px;
+padding-bottom: 70px;
+}
+#credits {
+ width:100%;
+  text-align: center;
+  background-color:yellow;
+  opacity:0.4;
+color:white;
+z-index:4;
+font-family: myriad;
+padding-top:72px;
+padding-bottom: 72px;
+display:none;
+
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+#credits h2{
+  color:black;
+}
+#reminders {
+ width:100%;
+  text-align: center;
+  background-color:red;
+  opacity:0.45;
+color:white;
+font-family: myriad;
+z-index:4;
+padding-top:70px;
+padding-bottom: 70px;
+display:none;
+
+}
+#toadd {
+ width:100%;
+  text-align: center;
+  background-color:pink;
+  opacity:0.7;
+color:black;
+z-index:4;
+font-family: myriad;
+padding-top:70px;
+padding-bottom: 70px;
+display:none;
+
+}
+#maps {
+ width:100%;
+  text-align: center;
+  background-color:purple;
+  opacity:0.5;
+color:white;
+z-index:4;
+font-family: myriad;
+padding-top:70px;
+padding-bottom: 70px;
+display:none;
+
+}
+
+h2 {
+  color: #fff;
+  font-size: 5em;
+  font-family: myriad;
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+  display:inline-block;
+}
+h3 {
+  color: #fff;
+  font-size: 3.5em;
+  font-family: myriad;
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+  display:inline-block;
+}
+#toadd h2 {
+  color:black;
+}
+#weather h2 {
+  font-size: 3em;
+}
+#weather2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather2 li {
+  padding-left: 5px;
+  display: inline-block;
+  font-family: myriad;
+  max-width:30%;
+  font-size:3em;
+  margin-left:40px;
+  color:white;
+}
+#homebtn {
+  width:270px;
+  max-width:270px;
+  height:270px;
+  max-height:270px;
+  background:rgba(255,255,255,0.5);
+  box-shadow: 0px 0px 70px black;
+  color:white;
+  font-family: myriad;
+  position:fixed;
+  border-radius:290px;
+  z-index:100;
+  left:38%;
+  right:40%;
+  bottom:40px;
+  padding:20px;
+  border:10px white solid;
+  display:none;
+  margin-top:100px;
+}
+#homebtn img {
+  max-width:90%;
+  height:auto;
+}
+#mapspage {
+ height:100%;
+        margin: 0px;
+        padding: 0px;
+       
+}
+#newspage {
+  width:100%;
+  height:auto;
+  z-index:50;
+  font-family: myriad;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: rgb(138,172,186);
+  display:none;
+}
+#reminderspage {
+  width:100%;
+  height:auto;
+  z-index:50;
+  font-family: myriad;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: rgb(195,75,82);
+  display:none;
+}
+#weatherpage {
+  height:700px;
+  margin-top:100px;
+  width:100%;
+  font-family: myriad;
+  display:none;
+}
+#itemw {
+  float:left;
+  margin-top:30px;
+  margin-right:300px;
+  display:block-inline;
+}
+#itemdw {
+  float:right;
+  display:block-inline;
+  margin-top:30px;
+  margin-left:300px;
+}
+#bigspan {
+  display: block;
+  padding: 30px;
+}
+#bigspan img {
+  width:70%;
+  height:auto;
+}
+.image {
+  margin-bottom:-30px;
+  padding:0px;
+}
+.newsitem {
+  display:block;
+  background: rgb(41,41,41);
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:40px;
+  width:95%;
+  height:auto;
+  max-width:100%;
+  box-shadow: 20px 20px 10px black;
+}
+.newsheading {
+  display:block;
+  margin-bottom:30px;
+}
+.newscontent {
+  display:block;
+  padding:20px;
+}
+.newscontent a {
+  display:none;
+}
+#newrem {
+  height:160px !important;
+  width:80%;
+  display:inline-block;
+  float:left;
+  font-size: 80pt;
+}
+#addrem {
+  height:160px !important;
+  float:right;
+  width:20%;
+  padding:3px;
+  background: rgb(41,41,41);
+  display:inline-block;
+}
+#symb {
+  height:160px !important;
+  width:80%;
+  display:inline-block;
+  float:left;
+  font-size: 80pt;
+}
+#getupdate {
+  height:160px !important;
+  float:right;
+  width:20%;
+  padding:3px;
+  background: rgb(41,41,41);
+  display:inline-block;
+}
+.remitem {
+  display:block;
+  background: rgb(41,41,41);
+  margin:50px;
+  width:97%;
+  height:auto;
+  max-width:100%;
+  box-shadow: 15px 15px 10px black;
+padding:40px;
+
+
+}
+#newrembar {
+  max-height:10em;
+}
+#toaddpage {
+  width:100%;
+ background-color: green;
+display: none;}
+#creditspage {
+  width:100%;
+  display:none;
+  background-color: transparent;
+}
+#creditspage img {
+  width:100%;
+  height:auto;
+}
+#detailsabtus {
+  width:100%;
+  margin-top:80px;
+  background: rgb(41,41,41);
+  padding:50px;
+}
+#results {
+  background: rgb(41,41,41);
+  width:100%;
+  max-width:100%;
+  height:auto;
+  box-shadow: 0px 0px 10px black;
+padding:30px;
+color:white;
+border-bottom-left-radius: 200px;
+border-bottom-right-radius: 200px;
+}
+#symbol {
+  color: #fff;
+  font-size: 5em;
+  font-family: myriad;
+  text-shadow: 0px 1px 15px rgba(0, 0, 0, 0.15);
+  display:inline-block;
+}
+#results h3 {
+  font-size:4em;
+}

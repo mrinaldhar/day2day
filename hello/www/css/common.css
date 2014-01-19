@@ -1,0 +1,30 @@
+@font-face
+	{
+	font-family : myriad;
+	src: url(../font/myriadpro.otf);
+	}
+body {
+	font-family:myriad;
+	padding-bottom:40px;
+}
+.container {
+   max-width: 330px;
+}
+
+h1 {
+	font-family: myriad;
+	color:#00489B;
+	text-align: center;
+}
+.logo {
+  max-width:auto;
+  max-height:30px;
+  margin-right:10px;
+  vertical-align: middle;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+#greeting {
+  float:left;
+  position:relative;
+}
